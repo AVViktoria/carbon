@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carbonautopower</title>
+    <title>Carbon</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
@@ -11,15 +11,18 @@
     <!--  Header-->
     <header class="header" id="header">
       <div class="header-container container">
-        <a class="header-logo logo" href="#">
+        <a
+          class="header-logo logo"
+          href="#"
+          lang="en"
+          aria-label="Логотип сайта"
+        >
           <img src="./images/logo.webp" width="156" height="62" alt="logo" />
         </a>
         <nav class="header-nav nav">
           <ul class="list">
             <li class="item">
-              <a id="services" href="./index.html" class="link current"
-                >About</a
-              >
+              <a href="./index.html" class="link current">About</a>
             </li>
             <li class="item">
               <a class="link" href="./index.html#gallery">Gallery</a>
@@ -52,7 +55,7 @@
     </header>
     <main>
       <!--   Hero -->
-      <section class="hero">
+      <section class="hero section">
         <div class="hero-container container">
           <div class="text-box">
             <p class="hero-text first">welcome to</p>
@@ -68,14 +71,14 @@
       </section>
 
       <!--   Services -->
-      <section class="services" id="services">
+      <section class="services section" id="services">
         <div class="services-container container">
           <img
             src="./images/hero-img.jpeg"
             alt="towing with car"
             class="services-img"
           />
-          <div class="text-box">
+          <div class="services-box">
             <h2 class="services-title">Our Services</h2>
             <ul class="services-list">
               <li class="services-text">
@@ -101,9 +104,9 @@
       </section>
 
       <!-- Gallery-->
-      <section class="gallery" id="gallery">
+      <section class="gallery section" id="gallery">
         <div class="gallery-container container">
-          <div class="gallery-text_box text-box">
+          <div class="gallery-text_box">
             <p class="gallery-text first">we are</p>
             <h2 class="gallery-title">High Quality Towing Service</h2>
             <p class="gallery-text second">
@@ -156,7 +159,7 @@
       </section>
 
       <!-- Reviews-->
-      <section class="reviews" id="reviews">
+      <section class="reviews section" id="reviews">
         <div class="reviews-container container">
           <h2 class="reviews-title">What Our Customers Say</h2>
           <ul class="reviews-list">
@@ -200,7 +203,7 @@
       </section>
 
       <!-- Contacts-->
-      <section class="contacts" id="contacts">
+      <section class="contacts section" id="contacts">
         <div class="contacts-container container">
           <h2 class="contacts-title__main">Contact Us</h2>
           <ul class="contacts-list">
@@ -215,7 +218,7 @@
                 <li>
                   <p class="contacts-text accent">9am - 8pm</p>
                   <p class="contacts-text accent">Appointment</p>
-                  <p class="contacts-text accent">Closed</p>
+                  <p class="contacts-text accent last">Closed</p>
                 </li>
               </ul>
             </li>
@@ -249,18 +252,19 @@
               <!-- <p class="contacts-text">Portland, OR 97236</p> -->
             </li>
           </ul>
+          <div id="map" class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18638.631381686188!2d-122.52257300056772!3d45.55486259364784!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a395df68b1a9%3A0x98869d3612784662!2sSunrise%20Express%20LLC!5e0!3m2!1sen!2sus!4v1694045315301!5m2!1sen!2sus"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
-        <div id="map" class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18638.631381686188!2d-122.52257300056772!3d45.55486259364784!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a395df68b1a9%3A0x98869d3612784662!2sSunrise%20Express%20LLC!5e0!3m2!1sen!2sus!4v1694045315301!5m2!1sen!2sus"
-            width="100%"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
+
         <a href="#" id="toTop">
           <svg
             width="10pt"

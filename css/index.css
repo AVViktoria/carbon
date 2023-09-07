@@ -14,31 +14,56 @@
 
 /*
 ============================
-| Logo / Логотип компании
+| Logo
 ============================
 */
 .header-logo {
   padding-top: 12px;
   padding-bottom: 12px;
-  margin-right: 160px;
+  margin-right: 93px;
 }
 /*
 ============================
-| Header section / Шапка сайта
+| Header section
 ============================
 */
-.header {
-  border-bottom: 1px solid #b2b2b2;
-  background-color: #c1c1c1;
+.section {
+  padding: 45px 0px;
 }
 .container {
-  display: flex;
-  align-items: center;
   width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
+  /* padding-right: 15px;
+  padding-left: 15px; */
   margin-right: auto;
   margin-left: auto;
+}
+
+.header {
+  border-bottom: 1px solid #706666c9;
+  background-color: #c1c1c1;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header .link {
+  display: block;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.header .list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header .item {
+  margin-right: 50px;
+}
+.header-nav .item:last-child {
+  margin-right: 0;
 }
 
 .header-nav .link {
@@ -51,30 +76,6 @@
 .header-nav .link:hover,
 .header-nav .link:focus {
   color: var(--accent-cl);
-}
-
-.header .link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
-.header-nav .list,
-.header-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-}
-
-.header .item {
-  margin-right: 50px;
-}
-.nav .item:last-child {
-  margin-right: 0;
 }
 
 .header-list .item:last-child {
@@ -108,10 +109,9 @@
 | Hero section / Герой
 ============================
 */
-.hero,
-.gallery {
-  /* max-width: 1600px; */
-  height: 700px;
+.hero {
+  max-width: 1600px;
+  height: 600px;
   margin-right: auto;
   margin-left: auto;
   background-image: linear-gradient(
@@ -124,14 +124,15 @@
   background-size: cover;
   background-position: center;
 }
-.hero-container,
-.services-container {
+.hero-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
-.hero-img {
-  height: 600px;
-  margin-top: 50px;
+
+.hero-img,
+.services-img {
+  height: 510px;
 }
 
 .hero-text,
@@ -157,22 +158,26 @@
   color: var(--title-cl);
 }
 
+/*
+============================
+| Services
+============================
+*/
 .services,
 .reviews {
   max-width: 1600px;
-  height: 650px;
+  height: 600px;
   margin-right: auto;
   margin-left: auto;
 }
 .services-container {
-  justify-content: center;
-  gap: 120px;
+  display: flex;
+  align-items: center;
 }
-.services-img {
-  height: 550px;
-  margin-top: 45px;
+.services-box {
+  width: 450px;
+  padding-left: 120px;
 }
-
 .services-title {
   margin-bottom: 40px;
   font-size: 40px;
@@ -189,18 +194,34 @@
   margin-right: 10px;
   fill: var(--accent-cl);
 }
-/* .gallery-title {
-  color: var(--accent-cl);
-} */
 
+/*
+============================
+| Gallery
+============================
+*/
+.gallery {
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bcg-gray-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .gallery-container,
 .contacts-container {
   flex-direction: column;
   align-items: flex-start;
 }
 .gallery-text_box {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 .gallery-title {
   margin-bottom: 40px;
@@ -208,9 +229,7 @@
   line-height: 1.4;
   color: var(--accent-txt-cl);
 }
-.gallery-list,
-.reviews-list,
-.contacts-list {
+.gallery-list {
   display: flex;
   flex-direction: row;
 }
@@ -233,22 +252,36 @@
   letter-spacing: 0.02em;
   color: var(--main-txt-cl);
 }
+
+.gallery-img_text:hover,
+.gallery-img_text:focus {
+  color: var(--title-cl);
+}
+
+/*
+============================
+| Reviews
+============================
+*/
+
 .reviews-container {
   flex-direction: column;
 }
-/* .reviews {
-  background-image: url(../images/bcg/bcg2.jpg);
-} */
+
 .reviews-title {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   font-size: 40px;
   line-height: 1.4;
   color: var(--main-txt-cl);
 }
+.reviews-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .reviews-link,
 .contacts-link {
-  margin-right: 60px;
   width: 350px;
 }
 .reviews-icon {
@@ -264,18 +297,23 @@
   color: var(--accent-txt-cl);
 }
 
+/*
+============================
+| Contacts
+============================
+*/
+
 .contacts {
-  height: 700px;
+  max-width: 1600px;
+  height: 790px;
   margin-right: auto;
   margin-left: auto;
   background-color: #c1c1c1;
-  /* background-image: url(../images/bcg/bcg2.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .contacts-title__main {
-  margin-top: 60px;
   margin-bottom: 40px;
   font-size: 40px;
   line-height: 1.4;
@@ -288,19 +326,24 @@
 .contacts-text {
   margin-bottom: 20px;
 }
+.contacts-text:last-child {
+  margin-bottom: 0;
+}
 .accent-dark {
   font-weight: 700;
   margin-right: 45px;
 }
+
+.contacts-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
 .contacts-list__time {
   display: flex;
 }
-.map {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-}
+
 .contacts-list .link {
   color: var(--main-txt-cl);
 }
@@ -309,10 +352,19 @@
 .contacts-list .accent:hover {
   color: var(--accent-cl);
 }
-iframe {
+.contacts-list .accent iframe {
   height: 360px;
   width: 80%;
   filter: grayscale(20%) contrast(93%);
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 1200px; */
+  margin-right: auto;
+  margin-left: auto;
 }
 #toTop {
   position: fixed;
