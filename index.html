@@ -9,20 +9,24 @@
   </head>
   <body>
     <!--  Header-->
-    <header class="header">
+    <header class="header" id="header">
       <div class="header-container container">
-        <a class="header-logo logo" href="index.html">
+        <a class="header-logo logo" href="#">
           <img src="./images/logo.webp" width="156" height="62" alt="logo" />
         </a>
         <nav class="header-nav nav">
           <ul class="list">
             <li class="item">
-              <a class="link current" href="./index.html">About</a>
+              <a id="services" href="./index.html" class="link current"
+                >About</a
+              >
             </li>
             <li class="item">
-              <a class="link" href="./portfolio.html">Portfolio</a>
+              <a class="link" href="./index.html#gallery">Gallery</a>
             </li>
-            <li class="item"><a class="link" href="">Contacts</a></li>
+            <li class="item">
+              <a class="link" href="./index.html#contacts">Contacts</a>
+            </li>
           </ul>
         </nav>
 
@@ -64,7 +68,7 @@
       </section>
 
       <!--   Services -->
-      <section class="services">
+      <section class="services" id="services">
         <div class="services-container container">
           <img
             src="./images/hero-img.jpeg"
@@ -97,7 +101,7 @@
       </section>
 
       <!-- Gallery-->
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <div class="gallery-container container">
           <div class="gallery-text_box text-box">
             <p class="gallery-text first">we are</p>
@@ -151,7 +155,8 @@
         </div>
       </section>
 
-      <section class="reviews">
+      <!-- Reviews-->
+      <section class="reviews" id="reviews">
         <div class="reviews-container container">
           <h2 class="reviews-title">What Our Customers Say</h2>
           <ul class="reviews-list">
@@ -191,6 +196,70 @@
               <p class="reviews-sign">Dave Mathew</p>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <!-- Contacts-->
+      <section class="contacts" id="contacts">
+        <div class="contacts-container container">
+          <h2 class="contacts-title__main">Contact Us</h2>
+          <ul class="contacts-list">
+            <li class="contacts-link">
+              <h3 class="contacts-title">Opening Hours</h3>
+              <ul class="contacts-list__time">
+                <li>
+                  <p class="contacts-text accent-dark">Mon-Fri:</p>
+                  <p class="contacts-text accent-dark">Sat:</p>
+                  <p class="contacts-text accent-dark">Sun:</p>
+                </li>
+                <li>
+                  <p class="contacts-text accent">Appointment</p>
+                  <p class="contacts-text accent">9am - 8pm</p>
+                  <p class="contacts-text accent">Closed</p>
+                </li>
+              </ul>
+            </li>
+            <li class="contacts-link">
+              <h3 class="contacts-title">Info</h3>
+              <p class="contacts-text">
+                <span class="accent-dark">Phone:</span>
+                <a class="accent link accent" href="tel:+15038106379"
+                  >+1 (503) 810-6379</a
+                >
+              </p>
+              <p class="contacts-text">
+                <span class="accent-dark">Email:</span>
+                <a
+                  class="accent link accent"
+                  href="mailto:carbonautopower@gmail.com"
+                >
+                  carbonautopower@gmail.com</a
+                >
+              </p>
+            </li>
+            <li class="contacts-link">
+              <h3 class="contacts-title">Location</h3>
+              <a
+                class="address__link link accent"
+                href="https://goo.gl/maps/7SHgaM44C2Z3bnki9"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Portland, OR</a
+              >
+              <!-- <p class="contacts-text">Portland, OR 97236</p> -->
+            </li>
+          </ul>
+        </div>
+        <div id="map" class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18638.631381686188!2d-122.52257300056772!3d45.55486259364784!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a395df68b1a9%3A0x98869d3612784662!2sSunrise%20Express%20LLC!5e0!3m2!1sen!2sus!4v1694045315301!5m2!1sen!2sus"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </section>
     </main>
