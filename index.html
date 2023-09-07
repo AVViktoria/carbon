@@ -17,40 +17,91 @@
           lang="en"
           aria-label="Логотип сайта"
         >
-          <img src="./images/logo.webp" width="156" height="62" alt="logo" />
+          <img
+            src="./images/logo/logo.webp"
+            width="156"
+            height="62"
+            alt="logo"
+          />
         </a>
-        <nav class="header-nav nav">
-          <ul class="list">
-            <li class="item">
-              <a href="./index.html" class="link current">About</a>
+
+        <!-- Мобильное меню Mobile-menu -->
+        <button
+          class="nav-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            class="nav-menu__icon"
+            width="24"
+            height="24"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="nav-menu__icon-cross"
+              href="./images/svg/symbol-defs.svg#close"
+            ></use>
+            <use
+              class="nav-menu__icon-menu"
+              href="./images/svg/symbol-defs.svg#menu"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="menu-container" id="menu-container" data-menu>
+          <nav class="header-nav nav">
+            <ul class="list nav__list">
+              <li class="item nav__item">
+                <a href="#" class="nav__link link current">About</a>
+              </li>
+              <li class="item nav__item">
+                <a class="nav__link link" href="./index.html#gallery"
+                  >Gallery</a
+                >
+              </li>
+              <li class="item nav__item">
+                <a class="nav__link link" href="./index.html#contacts"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="menu-contacts list">
+            <li class="menu-contacts__item">
+              <a
+                class="menu-contacts__link accent link"
+                href="tel:+15038106379"
+              >
+                <svg
+                  class="menu-contacts__icon icon-phone-hover"
+                  width="18"
+                  height="17"
+                >
+                  <use href="./images/svg/symbol-defs.svg#phone"></use>
+                </svg>
+                +1 (503) 810-6379</a
+              >
             </li>
-            <li class="item">
-              <a class="link" href="./index.html#gallery">Gallery</a>
-            </li>
-            <li class="item">
-              <a class="link" href="./index.html#contacts">Contacts</a>
+            <li class="menu-contacts__item">
+              <a
+                class="menu-contacts__link accent link"
+                href="mailto:carbonautopower@gmail.com"
+              >
+                <svg
+                  class="menu-contacts__icon icon-envelope-hover"
+                  width="16"
+                  height="12"
+                >
+                  <use href="./images/svg/symbol-defs.svg#envelope"></use>
+                </svg>
+                carbonautopower@gmail.com</a
+              >
             </li>
           </ul>
-        </nav>
-
-        <ul class="header-list list">
-          <li class="item">
-            <a class="accent link" href="tel:+15038106379">
-              <svg class="icon phone-hover" width="18" height="17">
-                <use href="./images/svg/symbol-defs.svg#phone"></use>
-              </svg>
-              +1 (503) 810-6379</a
-            >
-          </li>
-          <li class="item">
-            <a class="accent link" href="mailto:carbonautopower@gmail.com">
-              <svg class="icon envelope-hover" width="16" height="12">
-                <use href="./images/svg/symbol-defs.svg#envelope"></use>
-              </svg>
-              carbonautopower@gmail.com</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -63,7 +114,7 @@
             <p class="hero-text second">Transporting and towing specialists</p>
           </div>
           <img
-            src="./images/hero-img.jpeg"
+            src="./images/hero/hero-img_lg.png"
             alt="towing with car"
             class="hero-img"
           />
@@ -74,7 +125,7 @@
       <section class="services section" id="services">
         <div class="services-container container">
           <img
-            src="./images/hero-img.jpeg"
+            src="./images/hero/hero-img_lg.png"
             alt="towing with car"
             class="services-img"
           />
@@ -118,7 +169,7 @@
               <img
                 width="330"
                 height="280"
-                src="./images/gallery/gallery-1.jpeg"
+                src="./images/gallery/gallery-1_lg.png"
                 alt="towing with car"
                 class="gallery-img"
               />
@@ -128,7 +179,7 @@
               <img
                 width="330"
                 height="280"
-                src="./images/gallery/gallery-2.jpeg"
+                src="./images/gallery/gallery-2_lg.png"
                 alt="towing with car"
                 class="gallery-img"
               />
@@ -138,7 +189,7 @@
               <img
                 width="330"
                 height="280"
-                src="./images/gallery/gallery-3.jpeg"
+                src="./images/gallery/gallery-3_lg.png"
                 alt="towing with car"
                 class="gallery-img"
               />
@@ -148,7 +199,7 @@
               <img
                 width="330"
                 height="280"
-                src="./images/gallery/gallery-4.jpeg"
+                src="./images/gallery/gallery-4_lg.png"
                 alt="towing with car"
                 class="gallery-img"
               />
@@ -286,5 +337,6 @@
       </section>
     </main>
     <script src="./js/index.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
