@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carbon</title>
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" media="all" href="./css/index.css" />
   </head>
   <body>
     <!--  Header-->
@@ -113,22 +113,93 @@
             <h1 class="hero-title">Carbon Auto Power</h1>
             <p class="hero-text second">Transporting and towing specialists</p>
           </div>
-          <img
-            src="./images/hero/hero-img_lg.png"
-            alt="towing with car"
-            class="hero-img"
-          />
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="./images/hero/hero-img_lg.webp 1x"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="./images/hero/hero-img_lg.jpg 1x"
+              type="image/jpg"
+            />
+
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/hero/hero-img_md.webp 1x"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/hero/hero-img_md.jpg 1x"
+              type="image/jpg"
+            />
+
+            <source
+              media="(max-width: 767px)"
+              srcset="./images/hero/hero-img_sm.webp 1x"
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="./images/hero/hero-img_sm.webp.jpg 1x"
+              type="image/jpg"
+            />
+            <img
+              src="./images/hero/hero-img_lg.png"
+              alt="towing with car"
+              class="hero-img"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </section>
 
       <!--   Services -->
       <section class="services section" id="services">
         <div class="services-container container">
-          <img
-            src="./images/hero/hero-img_lg.png"
-            alt="towing with car"
-            class="services-img"
-          />
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="./images/hero/hero-img_lg.webp 1x"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="./images/hero/hero-img_lg.jpg 1x"
+              type="image/jpg"
+            />
+
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/hero/hero-img_md.webp 1x"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/hero/hero-img_md.jpg 1x"
+              type="image/jpg"
+            />
+
+            <source
+              media="(max-width: 767px)"
+              srcset="./images/hero/hero-img_sm.webp 1x"
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="./images/hero/hero-img_sm.webp.jpg 1x"
+              type="image/jpg"
+            />
+            <img
+              src="./images/hero/hero-img_lg.png"
+              alt="towing with car"
+              class="services-img"
+              loading="lazy"
+            />
+          </picture>
+
           <div class="services-box">
             <h2 class="services-title">Our Services</h2>
             <ul class="services-list">
@@ -166,43 +237,187 @@
           </div>
           <ul class="gallery-list">
             <li class="gallery-link">
-              <img
-                width="330"
-                height="280"
-                src="./images/gallery/gallery-1_lg.png"
-                alt="towing with car"
-                class="gallery-img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/gallery/gallery-1_lg.webp 1x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/gallery/gallery-1_lg.jpg 1x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/gallery/gallery-1_md.webp 1x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/gallery/gallery-1_md.jpg 1x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/gallery/gallery-1_sm.webp 1x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/gallery/gallery-1_sm.webp.jpg 1x"
+                  type="image/jpg"
+                />
+                <img
+                  width="330"
+                  height="280"
+                  src="./images/gallery/gallery-1_lg.png"
+                  alt="towing with car"
+                  class="gallery-img"
+                  loading="lazy"
+                />
+              </picture>
+
               <p class="gallery-img_text">Sport Cars</p>
             </li>
             <li class="gallery-link">
-              <img
-                width="330"
-                height="280"
-                src="./images/gallery/gallery-2_lg.png"
-                alt="towing with car"
-                class="gallery-img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/gallery/gallery-2_lg.webp 1x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/gallery/gallery-2_lg.jpg 1x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/gallery/gallery-2_md.webp 1x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/gallery/gallery-2_md.jpg 1x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/gallery/gallery-2_sm.webp 1x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/gallery/gallery-2_sm.webp.jpg 1x"
+                  type="image/jpg"
+                />
+                <img
+                  width="330"
+                  height="280"
+                  src="./images/gallery/gallery-2_lg.png"
+                  alt="towing with car"
+                  class="gallery-img"
+                  loading="lazy"
+                />
+              </picture>
+
               <p class="gallery-img_text">Working Technician</p>
             </li>
             <li class="gallery-link">
-              <img
-                width="330"
-                height="280"
-                src="./images/gallery/gallery-3_lg.png"
-                alt="towing with car"
-                class="gallery-img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/gallery/gallery-3_lg.webp 1x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/gallery/gallery-3_lg.jpg 1x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/gallery/gallery-3_md.webp 1x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/gallery/gallery-3_md.jpg 1x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/gallery/gallery-3_sm.webp 1x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/gallery/gallery-3_sm.webp.jpg 1x"
+                  type="image/jpg"
+                />
+                <img
+                  width="330"
+                  height="280"
+                  src="./images/gallery/gallery-3_lg.png"
+                  alt="towing with car"
+                  class="gallery-img"
+                  loading="lazy"
+                />
+              </picture>
+
               <p class="gallery-img_text">Exotic Cars</p>
             </li>
             <li class="gallery-link">
-              <img
-                width="330"
-                height="280"
-                src="./images/gallery/gallery-4_lg.png"
-                alt="towing with car"
-                class="gallery-img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/gallery/gallery-4_lg.webp 1x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/gallery/gallery-4_lg.jpg 1x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/gallery/gallery-4_md.webp 1x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/gallery/gallery-4_md.jpg 1x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/gallery/gallery-4_sm.webp 1x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/gallery/gallery-4_sm.webp.jpg 1x"
+                  type="image/jpg"
+                />
+                <img
+                  width="330"
+                  height="280"
+                  src="./images/gallery/gallery-4_lg.png"
+                  alt="towing with car"
+                  class="gallery-img"
+                  loading="lazy"
+                />
+              </picture>
+
               <p class="gallery-img_text">Cars from action</p>
             </li>
           </ul>
