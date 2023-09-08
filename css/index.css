@@ -371,11 +371,19 @@
 
 .hero-img,
 .services-img {
+  /* flex-wrap: wrap; */
+
   @media screen and (min-width: 1200px) {
     height: 510px;
   }
 }
-
+.hero picture,
+.services picture {
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .hero-text,
 .services-text,
 .gallery-text,
