@@ -474,6 +474,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: auto;
   margin-bottom: 25px;
   font-size: 30px;
   line-height: 1.4;
@@ -837,7 +838,7 @@
   position: fixed;
   display: inline-block;
   bottom: 40px;
-  right: -40px;
+  right: -50px;
   width: 37px;
   height: 37px;
   z-index: 1000;
