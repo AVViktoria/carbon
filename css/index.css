@@ -80,6 +80,8 @@
 /* Shine */
 figure {
   overflow: hidden;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .logo-cont figure {
@@ -334,26 +336,6 @@ figure {
   fill: currentColor;
 }
 
-.icon-envelope-hover {
-  @media screen and (max-width: 767px) {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: var(--main-txt-cl);
-  }
-}
-
-.icon-phone-hover {
-  @media screen and (max-width: 767px) {
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: var(--accent-cl);
-  }
-}
-
 /*
 ============================
 | Hero section / Герой
@@ -414,11 +396,19 @@ figure {
 
 .hero-img,
 .services-img {
-  /* flex-wrap: wrap; */
-
+  border-radius: 1%;
+  transition: transform 500ms ease-in-out, box-shadow 250ms ease-in-out;
   @media screen and (min-width: 1200px) {
     height: 510px;
   }
+}
+
+.hero-img:hover,
+.services-img:hover,
+.hero-img:focus,
+.services-img:focus {
+  box-shadow: 0 8px 30px rgb(212 20 67 / 10%);
+  transform: scale(1.1);
 }
 .hero picture,
 .services picture {
@@ -428,7 +418,6 @@ figure {
   }
 }
 .hero-text,
-.services-text,
 .gallery-text,
 .gallery-img_text {
   font-size: 15px;
@@ -468,6 +457,10 @@ figure {
   @media screen and (max-width: 1200px) {
     margin-bottom: 25px;
   }
+}
+.hero-text.second {
+  font-size: 20px;
+  margin-top: 15px;
 }
 /*
 ============================
@@ -510,7 +503,7 @@ figure {
 .services-box {
   @media screen and (min-width: 1200px) {
     width: 450px;
-    padding-left: 120px;
+    padding-left: 80px;
   }
 }
 .services-title {
@@ -518,21 +511,23 @@ figure {
   justify-content: center;
   align-items: center;
   width: auto;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   font-size: 30px;
   line-height: 1.4;
   width: 500px;
   color: var(--accent-txt-cl);
+  margin-right: auto;
+  margin-left: auto;
 
   @media screen and (min-width: 1200px) {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     align-items: center;
     justify-content: flex-start;
   }
 }
-.services-text {
+.services-text__link {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   &:not(:last-child) {
     margin-bottom: 35px;
   }
@@ -541,8 +536,27 @@ figure {
     margin-bottom: 35px;
   }
 }
+.services-text {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-txt-cl);
 
-.services-list .icon {
+  @media screen and (min-width: 1200px) {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-txt-cl);
+  }
+}
+.box-5 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.services-text__link .icon {
   margin-right: 10px;
   fill: var(--accent-cl);
 }
@@ -649,10 +663,18 @@ figure {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  border-radius: 3%;
+  transition: transform 500ms ease-in-out, box-shadow 250ms ease-in-out;
   @media screen and (min-width: 1200px) {
     width: 270px;
   }
 }
+.gallery-img:hover,
+.gallery-img:focus {
+  box-shadow: 0 8px 30px rgb(212 20 67 / 10%);
+  transform: scale(1.4);
+}
+
 .gallery-img_text {
   margin-top: 15px;
   text-align: center;
