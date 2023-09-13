@@ -919,6 +919,10 @@ figure {
     margin-bottom: 30px;
   }
 }
+
+.contacts-list.footer {
+  justify-content: space-evenly;
+}
 .contacts-list__time {
   display: flex;
 }
