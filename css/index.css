@@ -409,7 +409,7 @@ figure {
 .services-img:focus {
   @media screen and (min-width: 768px) {
     box-shadow: 0 8px 30px rgb(212 20 67 / 10%);
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
   }
 }
 .hero picture,
