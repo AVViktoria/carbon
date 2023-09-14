@@ -72,10 +72,12 @@
 ============================
 */
 .header-logo {
+  padding-top: 4px;
+  padding-bottom: 4px;
   @media screen and (min-width: 768px) {
+    margin-right: 25px;
     padding-top: 12px;
     padding-bottom: 12px;
-    margin-right: 25px;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 30px;
@@ -86,6 +88,9 @@ figure {
   overflow: hidden;
   margin-bottom: 0;
   margin-top: 0;
+  @media screen and (max-width: 768px) {
+    margin-left: 15px;
+  }
 }
 
 .logo-cont figure {
@@ -185,9 +190,8 @@ figure {
   width: 100%;
   padding: 40px 48px;
   z-index: 1;
-  /* height: 100vh; */
   @media screen and (max-width: 767px) {
-    background-color: var(--title-cl);
+    background-image: url("../images/bcg/bcg-gray_md.png");
   }
   @media screen and (min-width: 768px) {
     display: flex;
@@ -262,6 +266,16 @@ figure {
   letter-spacing: 0.02em;
   color: var(--main-txt-cl);
   transition: color var(--main-animation);
+  &.current {
+    color: var(--accent-cl);
+    position: relative;
+  }
+  @media screen and (max-width: 768px) {
+    &:hover,
+    &:focus {
+      color: var(--title-cl);
+    }
+  }
   @media screen and (min-width: 768px) {
     display: block;
     padding-top: 32px;
@@ -272,16 +286,10 @@ figure {
     letter-spacing: 0.02em;
     color: #212121;
     transition: color var(--main-animation);
-  }
-
-  &:hover,
-  &:focus {
-    color: var(--accent-cl);
-  }
-
-  &.current {
-    color: var(--accent-cl);
-    position: relative;
+    &:hover,
+    &:focus {
+      color: var(--accent-cl);
+    }
   }
 }
 

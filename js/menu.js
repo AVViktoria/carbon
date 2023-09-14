@@ -10,6 +10,8 @@
     mobileMenuRef.classList.toggle("is-open");
     if (!expanded) {
       document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "visible";
     }
   });
 
